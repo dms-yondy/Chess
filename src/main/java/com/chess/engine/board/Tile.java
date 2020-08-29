@@ -9,7 +9,7 @@ import java.util.Map;
 public abstract class Tile {
 
     protected final int tileCoordinate;
-    private static final Map<Integer, EmptyTile> EMPTY_TILE = createAllPossibleEmptyTiles();
+    private static final Map<Integer, EmptyTile> EMPTY_TILE_CACHE = createAllPossibleEmptyTiles();
     private static int NUMBER_OF_TILES = 64;
 
     private Tile(int tileCoordinate) {
@@ -21,20 +21,19 @@ public abstract class Tile {
     public abstract Piece getPiece();
 
     private static Map<Integer, EmptyTile>  createAllPossibleEmptyTiles() {
-
         final Map<Integer, EmptyTile> emptyTileMap = new HashMap<>();
         for(int i = 0; i < NUMBER_OF_TILES; i++) emptyTileMap.put(i, new EmptyTile(i));
         return ImmutableMap.copyOf(emptyTileMap);
     }
 
     public static Tile createTile(final int tileCoordinate, final Piece piece) {
-        return piece != null ? new OccupiedTile(tileCoordinate, piece) : EMPTY_TILE.get(tileCoordinate);
+        return piece != null ? new OccupiedTile(tileCoordinate, piece) : EMPTY_TILE_CACHE.get(tileCoordinate);
     }
 
     public static final class EmptyTile extends Tile {
 
 
-        EmptyTile(final int tileCoordinate) {
+        private EmptyTile(final int tileCoordinate) {
             super(tileCoordinate);
         }
 
@@ -53,7 +52,7 @@ public abstract class Tile {
 
         private Piece pieceOnTile;
 
-        OccupiedTile(int tileCoordinate, Piece pieceOnTile) {
+        private OccupiedTile(int tileCoordinate, Piece pieceOnTile) {
             super(tileCoordinate);
             this.pieceOnTile = pieceOnTile;
         }
