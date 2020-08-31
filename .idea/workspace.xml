@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b47c26b-c6b7-4b43-81b6-8c5f2401f2b5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chess/engine/Alliance.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chess/engine/board/Board.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chess/engine/board/Move.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chess/engine/pieces/Knight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chess/engine/board/BoardUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chess/engine/board/Tile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chess/engine/board/Tile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chess/engine/pieces/Knight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chess/engine/pieces/Knight.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/chess/engine/pieces/Piece.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chess/engine/pieces/Piece.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,6 +50,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveMembersDialog.RECENTS_KEY">
+      <recent name="com.chess.engine.board.BoardUtils" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.chess.engine.board.BoardUtils" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="Applet" factoryName="Applet">
@@ -118,23 +122,39 @@
       <option name="project" value="LOCAL" />
       <updated>1598623404171</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added Board and Move stub classes&#10;Added Enum Alliance class&#10;Implemented Piece and Knight classes">
+      <created>1598683156638</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1598683156638</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added Tile stub class" />
     <MESSAGE value="Implemented tile class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented tile class" />
+    <MESSAGE value="Added Board and Move stub classes&#10;Added Enum Alliance class&#10;Implemented Piece and Knight classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Board and Move stub classes&#10;Added Enum Alliance class&#10;Implemented Piece and Knight classes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2053" y="112" key="#com.intellij.ide.util.MemberChooser" timestamp="1598682742467">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state x="2053" y="112" key="#com.intellij.ide.util.MemberChooser/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1598682742467" />
-    <state x="1852" y="23" key="CommitChangelistDialog2" timestamp="1598623403933">
+    <state x="2025" y="427" width="672" height="256" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1598698237223">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
-    <state x="1852" y="23" key="CommitChangelistDialog2/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1598623403933" />
+    <state x="2025" y="427" width="672" height="256" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1598698237223" />
+    <state x="1953" y="366" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog" timestamp="1598698370608">
+      <screen x="1280" y="23" width="1920" height="1057" />
+    </state>
+    <state x="1953" y="366" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1598698370608" />
+    <state x="1852" y="23" key="CommitChangelistDialog2" timestamp="1598683156297">
+      <screen x="1280" y="23" width="1920" height="1057" />
+    </state>
+    <state x="1852" y="23" key="CommitChangelistDialog2/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1598683156297" />
     <state x="2120" y="303" key="Github.ShareDialog" timestamp="1598620667185">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
@@ -143,9 +163,9 @@
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state x="2047" y="104" key="Github.UntrackedFilesDialog/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1598620694454" />
-    <state x="1840" y="139" key="Vcs.Push.Dialog.v2" timestamp="1598623409636">
+    <state x="1840" y="139" key="Vcs.Push.Dialog.v2" timestamp="1598683160712">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
-    <state x="1840" y="139" key="Vcs.Push.Dialog.v2/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1598623409636" />
+    <state x="1840" y="139" key="Vcs.Push.Dialog.v2/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1598683160712" />
   </component>
 </project>
