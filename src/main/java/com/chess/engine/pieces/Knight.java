@@ -14,7 +14,7 @@ public class Knight extends Piece {
 
     private final static int[] CANDIDATE_MOVE_COORDINATES = {-17, -15, -10, -6, 6, 10, 15, 17};
 
-    Knight(int piecePosition, Alliance pieceAlliance) {
+    public Knight(final int piecePosition, final Alliance pieceAlliance) {
         super(piecePosition, pieceAlliance);
     }
 
@@ -31,14 +31,8 @@ public class Knight extends Piece {
                 if(isFirstColumnExclusion(this.piecePosition, C) || isSecondColumnExclusion(this.piecePosition, C)
                         || isSeventhColumnExclusion(this.piecePosition, C)
                         || isEighthColumnExclusion(this.piecePosition, C)) continue;
-
-                final Tile candidateDestinationTile = board.getTile(candidateDestinationCoordinate);
-                if(!candidateDestinationTile.isTileOccupied()) legalMoves.add(new Move());
-                else {
-                    final Piece pieceAtDestinationTile = candidateDestinationTile.getPiece();
-                    final Alliance pieceAlliance = pieceAtDestinationTile.getPieceAlliance();
-                    if(this.pieceAlliance != pieceAlliance) legalMoves.add(new Move());
-                }
+                Move currMove = getMoveType(board, this, candidateDestinationCoordinate);
+                if(currMove != null) legalMoves.add(currMove);
             }
         }
         return ImmutableList.copyOf(legalMoves);
