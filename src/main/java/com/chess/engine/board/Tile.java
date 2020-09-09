@@ -19,6 +19,10 @@ public abstract class Tile {
 
     public abstract Piece getPiece();
 
+    public int getTileCoordinate() {
+        return tileCoordinate;
+    }
+
     private static Map<Integer, EmptyTile>  createAllPossibleEmptyTiles() {
         final Map<Integer, EmptyTile> emptyTileMap = new HashMap<>();
         for(int i = 0; i < BoardUtils.NUM_TILE; i++) emptyTileMap.put(i, new EmptyTile(i));
@@ -34,6 +38,11 @@ public abstract class Tile {
 
         private EmptyTile(final int tileCoordinate) {
             super(tileCoordinate);
+        }
+
+        @Override
+        public String toString() {
+            return "-";
         }
 
         @Override
@@ -54,6 +63,12 @@ public abstract class Tile {
         private OccupiedTile(final int tileCoordinate, final Piece pieceOnTile) {
             super(tileCoordinate);
             this.pieceOnTile = pieceOnTile;
+        }
+
+        @Override
+        public String toString() {
+            return getPiece().getPieceAlliance().isBlack() ? getPiece().toString().toLowerCase()
+                    : getPiece().toString();
         }
 
         @Override

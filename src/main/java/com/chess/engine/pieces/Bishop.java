@@ -14,7 +14,7 @@ public class Bishop extends Piece {
     private final static int[] CANDIDATE_MOVE_VECTOR_COORDINATES = {-9, -7, 7, 9};
 
     public Bishop(int piecePosition, Alliance pieceAlliance) {
-        super(piecePosition, pieceAlliance);
+        super(PieceType.BISHOP, piecePosition, pieceAlliance);
     }
 
     @Override
@@ -28,13 +28,26 @@ public class Bishop extends Piece {
                 candidateDestinationCoordinate += candidateCoordinateOffset;
                 if(BoardUtils.isValidTileCoordinate(candidateDestinationCoordinate)) {
                     Move currMove = getMoveType(board, this, candidateDestinationCoordinate);
-                    if(currMove != null) legalMoves.add(currMove);
-                    // This might not work
-                    if(currMove.getClass() == Move.AttackMove.class) break;
+                    if(currMove == null) continue;
+                    else {
+                        legalMoves.add(currMove);
+                        // This might not work
+                        if(currMove.getClass() == Move.AttackMove.class) break;
+                    }
                 }
             }
         }
         return legalMoves;
+    }
+
+    @Override
+    public Piece movePiece(Move move) {
+        return new Bishop(move.getDestinationCoordinate(), move.getMovePiece().getPieceAlliance());
+    }
+
+    @Override
+    public String toString() {
+        return PieceType.BISHOP.toString();
     }
 
     private static boolean isFirstColumnExclusion(final int currentPosition, final int candidateOffset) {

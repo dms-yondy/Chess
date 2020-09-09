@@ -10,7 +10,7 @@ import java.util.List;
 
 public class Queen extends Piece {
     public Queen(int piecePosition, Alliance pieceAlliance) {
-        super(piecePosition, pieceAlliance);
+        super(PieceType.QUEEN, piecePosition, pieceAlliance);
     }
 
     @Override
@@ -21,5 +21,15 @@ public class Queen extends Piece {
         legalMoves.addAll(bishop.calculateLegalMoves(board));
         legalMoves.addAll(rook.calculateLegalMoves(board));
         return legalMoves;
+    }
+
+    @Override
+    public String toString() {
+        return PieceType.QUEEN.toString();
+    }
+
+    @Override
+    public Piece movePiece(Move move) {
+        return new Queen(move.getDestinationCoordinate(), move.getMovePiece().getPieceAlliance());
     }
 }
