@@ -5,25 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b47c26b-c6b7-4b43-81b6-8c5f2401f2b5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chess/engine/JChess.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chess/engine/player/BlackPlayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chess/engine/player/MoveStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chess/engine/player/MoveTransition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chess/engine/player/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chess/engine/player/WhitePlayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chess/gui/Table.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chess/engine/Alliance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chess/engine/Alliance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chess/engine/board/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chess/engine/board/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chess/engine/JChess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chess/JChess.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/chess/engine/board/BoardUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chess/engine/board/BoardUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chess/engine/board/Move.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chess/engine/board/Move.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chess/engine/board/Tile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chess/engine/board/Tile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chess/engine/pieces/Bishop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chess/engine/pieces/Bishop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chess/engine/pieces/King.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chess/engine/pieces/King.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chess/engine/pieces/Knight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chess/engine/pieces/Knight.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/chess/engine/pieces/Pawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chess/engine/pieces/Pawn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chess/engine/pieces/Piece.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chess/engine/pieces/Piece.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chess/engine/pieces/Queen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chess/engine/pieces/Queen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chess/engine/pieces/Rook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chess/engine/pieces/Rook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chess/engine/player/BlackPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chess/engine/player/BlackPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chess/engine/player/WhitePlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chess/engine/player/WhitePlayer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,8 +26,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -71,7 +59,11 @@
       <recent name="com.chess.engine.board.BoardUtils" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.chess" />
       <recent name="com.chess.engine.board.BoardUtils" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.chess.engine.player" />
@@ -86,12 +78,12 @@
       <method />
     </configuration>
     <configuration name="JChess" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.chess.engine.JChess" />
+      <option name="MAIN_CLASS_NAME" value="com.chess.JChess" />
       <module name="Chess.main" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.chess.engine.*" />
+          <option name="PATTERN" value="com.chess.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -180,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599029153682</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Implemented Move class">
+      <created>1599661277953</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1599661277954</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -189,7 +188,8 @@
     <MESSAGE value="Added Board and Move stub classes&#10;Added Enum Alliance class&#10;Implemented Piece and Knight classes" />
     <MESSAGE value="Finished Knight class implementation" />
     <MESSAGE value="Added all the piece classes&#10;Board implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added all the piece classes&#10;Board implemented" />
+    <MESSAGE value="Implemented Move class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented Move class" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2053" y="112" key="#com.intellij.ide.util.MemberChooser" timestamp="1599491452721">
@@ -200,18 +200,26 @@
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state x="1957" y="419" key="#com.intellij.refactoring.memberPullUp.PullUpDialog/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1599462687498" />
-    <state x="2025" y="427" width="672" height="256" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1598698237223">
+    <state x="1899" y="473" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1599661767878">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
-    <state x="2025" y="427" width="672" height="256" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1598698237223" />
+    <state x="1899" y="473" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1599661767878" />
+    <state x="2025" y="427" width="672" height="256" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1599661737214">
+      <screen x="1280" y="23" width="1920" height="1057" />
+    </state>
+    <state x="2025" y="427" width="672" height="256" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1599661737214" />
+    <state x="2026" y="440" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1599661779473">
+      <screen x="1280" y="23" width="1920" height="1057" />
+    </state>
+    <state x="2026" y="440" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1599661779473" />
     <state x="1953" y="366" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog" timestamp="1598698370608">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state x="1953" y="366" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1598698370608" />
-    <state x="1852" y="23" key="CommitChangelistDialog2" timestamp="1599029153300">
+    <state x="1852" y="23" key="CommitChangelistDialog2" timestamp="1599661277373">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
-    <state x="1852" y="23" key="CommitChangelistDialog2/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1599029153300" />
+    <state x="1852" y="23" key="CommitChangelistDialog2/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1599661277373" />
     <state x="2120" y="303" key="Github.ShareDialog" timestamp="1598620667185">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
@@ -220,26 +228,26 @@
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state x="2047" y="104" key="Github.UntrackedFilesDialog/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1598620694454" />
-    <state width="1878" height="289" key="GridCell.Tab.0.bottom" timestamp="1599042783023">
+    <state width="1878" height="280" key="GridCell.Tab.0.bottom" timestamp="1599733279953">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
-    <state width="1878" height="289" key="GridCell.Tab.0.bottom/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1599042783023" />
-    <state width="1878" height="289" key="GridCell.Tab.0.center" timestamp="1599042783022">
+    <state width="1878" height="280" key="GridCell.Tab.0.bottom/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1599733279953" />
+    <state width="1878" height="280" key="GridCell.Tab.0.center" timestamp="1599733279952">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
-    <state width="1878" height="289" key="GridCell.Tab.0.center/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1599042783022" />
-    <state width="1878" height="289" key="GridCell.Tab.0.left" timestamp="1599042783021">
+    <state width="1878" height="280" key="GridCell.Tab.0.center/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1599733279952" />
+    <state width="1878" height="280" key="GridCell.Tab.0.left" timestamp="1599733279951">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
-    <state width="1878" height="289" key="GridCell.Tab.0.left/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1599042783021" />
-    <state width="1878" height="289" key="GridCell.Tab.0.right" timestamp="1599042783023">
+    <state width="1878" height="280" key="GridCell.Tab.0.left/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1599733279951" />
+    <state width="1878" height="280" key="GridCell.Tab.0.right" timestamp="1599733279952">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
-    <state width="1878" height="289" key="GridCell.Tab.0.right/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1599042783023" />
-    <state x="1840" y="139" key="Vcs.Push.Dialog.v2" timestamp="1599029206275">
+    <state width="1878" height="280" key="GridCell.Tab.0.right/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1599733279952" />
+    <state x="1840" y="139" key="Vcs.Push.Dialog.v2" timestamp="1599661281951">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
-    <state x="1840" y="139" key="Vcs.Push.Dialog.v2/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1599029206275" />
+    <state x="1840" y="139" key="Vcs.Push.Dialog.v2/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1599661281951" />
     <state x="2030" y="325" key="refactoring.ChangeSignatureDialog" timestamp="1599040114241">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>

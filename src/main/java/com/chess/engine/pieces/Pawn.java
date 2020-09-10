@@ -29,8 +29,8 @@ public class Pawn extends Piece {
                 //TODO more work is needed here!
                 legalMoves.add(new Move.MajorMove(board, this, candidateDestinationCoordinate));
             }if(currentCandidateOffset == 16 && this.isFirstMove()
-                    && (BoardUtils.SECOND_ROW[this.piecePosition] && (this.getPieceAlliance().isBlack())
-                    || (BoardUtils.SEVENTH_ROW[this.piecePosition]) && this.getPieceAlliance().isWhite())) {
+                    && (BoardUtils.SEVENTH_RANK[this.piecePosition] && (this.getPieceAlliance().isBlack())
+                    || (BoardUtils.SECOND_RANK[this.piecePosition]) && this.getPieceAlliance().isWhite())) {
                 final int behindCandidateDestinationCoordinate = this.piecePosition
                         + this.pieceAlliance.getDirection() * 8;
                 if(!board.getTile(behindCandidateDestinationCoordinate).isTileOccupied()
