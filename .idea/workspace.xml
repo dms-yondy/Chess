@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4b47c26b-c6b7-4b43-81b6-8c5f2401f2b5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chess/engine/pieces/Pawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chess/engine/pieces/Pawn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chess/gui/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chess/gui/Table.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chess/engine/pieces/Queen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chess/engine/pieces/Queen.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,7 +188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601627519550</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Fixed bug so pawns can now move two spaces on first move">
+      <created>1601633552078</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1601633552078</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -201,7 +207,8 @@
     <MESSAGE value="Implemented Move class" />
     <MESSAGE value="refactored gui&#10;add new art assets" />
     <MESSAGE value="Fixed bug on leave king in check method" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed bug on leave king in check method" />
+    <MESSAGE value="Fixed bug so pawns can now move two spaces on first move" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed bug so pawns can now move two spaces on first move" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2053" y="112" key="#com.intellij.ide.util.MemberChooser" timestamp="1599491452721">
@@ -228,10 +235,10 @@
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state x="1953" y="366" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1598698370608" />
-    <state x="1852" y="23" key="CommitChangelistDialog2" timestamp="1601627519150">
+    <state x="1852" y="23" key="CommitChangelistDialog2" timestamp="1601633551815">
       <screen x="1280" y="23" width="1920" height="1032" />
     </state>
-    <state x="1852" y="23" key="CommitChangelistDialog2/0.23.1280.752/1280.23.1920.1032@1280.23.1920.1032" timestamp="1601627519150" />
+    <state x="1852" y="23" key="CommitChangelistDialog2/0.23.1280.752/1280.23.1920.1032@1280.23.1920.1032" timestamp="1601633551815" />
     <state x="1852" y="23" key="CommitChangelistDialog2/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1599733397391" />
     <state x="2120" y="303" key="Github.ShareDialog" timestamp="1598620667185">
       <screen x="1280" y="23" width="1920" height="1057" />
@@ -241,30 +248,30 @@
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state x="2047" y="104" key="Github.UntrackedFilesDialog/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1598620694454" />
-    <state width="1878" height="279" key="GridCell.Tab.0.bottom" timestamp="1601633399707">
+    <state width="1878" height="279" key="GridCell.Tab.0.bottom" timestamp="1601635819145">
       <screen x="1280" y="23" width="1920" height="1032" />
     </state>
-    <state width="1878" height="279" key="GridCell.Tab.0.bottom/0.23.1280.752/1280.23.1920.1032@1280.23.1920.1032" timestamp="1601633399707" />
+    <state width="1878" height="279" key="GridCell.Tab.0.bottom/0.23.1280.752/1280.23.1920.1032@1280.23.1920.1032" timestamp="1601635819145" />
     <state width="1878" height="288" key="GridCell.Tab.0.bottom/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1600370343551" />
-    <state width="1878" height="279" key="GridCell.Tab.0.center" timestamp="1601633399706">
+    <state width="1878" height="279" key="GridCell.Tab.0.center" timestamp="1601635819144">
       <screen x="1280" y="23" width="1920" height="1032" />
     </state>
-    <state width="1878" height="279" key="GridCell.Tab.0.center/0.23.1280.752/1280.23.1920.1032@1280.23.1920.1032" timestamp="1601633399706" />
+    <state width="1878" height="279" key="GridCell.Tab.0.center/0.23.1280.752/1280.23.1920.1032@1280.23.1920.1032" timestamp="1601635819144" />
     <state width="1878" height="288" key="GridCell.Tab.0.center/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1600370343550" />
-    <state width="1878" height="279" key="GridCell.Tab.0.left" timestamp="1601633399705">
+    <state width="1878" height="279" key="GridCell.Tab.0.left" timestamp="1601635819143">
       <screen x="1280" y="23" width="1920" height="1032" />
     </state>
-    <state width="1878" height="279" key="GridCell.Tab.0.left/0.23.1280.752/1280.23.1920.1032@1280.23.1920.1032" timestamp="1601633399705" />
+    <state width="1878" height="279" key="GridCell.Tab.0.left/0.23.1280.752/1280.23.1920.1032@1280.23.1920.1032" timestamp="1601635819143" />
     <state width="1878" height="288" key="GridCell.Tab.0.left/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1600370343549" />
-    <state width="1878" height="279" key="GridCell.Tab.0.right" timestamp="1601633399706">
+    <state width="1878" height="279" key="GridCell.Tab.0.right" timestamp="1601635819145">
       <screen x="1280" y="23" width="1920" height="1032" />
     </state>
-    <state width="1878" height="279" key="GridCell.Tab.0.right/0.23.1280.752/1280.23.1920.1032@1280.23.1920.1032" timestamp="1601633399706" />
+    <state width="1878" height="279" key="GridCell.Tab.0.right/0.23.1280.752/1280.23.1920.1032@1280.23.1920.1032" timestamp="1601635819145" />
     <state width="1878" height="288" key="GridCell.Tab.0.right/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1600370343551" />
-    <state x="1840" y="136" key="Vcs.Push.Dialog.v2" timestamp="1601627524137">
+    <state x="1840" y="136" key="Vcs.Push.Dialog.v2" timestamp="1601633555967">
       <screen x="1280" y="23" width="1920" height="1032" />
     </state>
-    <state x="1840" y="136" key="Vcs.Push.Dialog.v2/0.23.1280.752/1280.23.1920.1032@1280.23.1920.1032" timestamp="1601627524137" />
+    <state x="1840" y="136" key="Vcs.Push.Dialog.v2/0.23.1280.752/1280.23.1920.1032@1280.23.1920.1032" timestamp="1601633555967" />
     <state x="1840" y="139" key="Vcs.Push.Dialog.v2/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1599733403251" />
     <state x="1786" y="294" width="907" height="617" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1600072992871">
       <screen x="1280" y="23" width="1920" height="1057" />
