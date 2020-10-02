@@ -93,11 +93,11 @@ public abstract class Player {
         }
 
         final Board transitionBoard = move.execute();
-
         final Collection<Move> kingAttacks = Player.calculateAttackOnTile(transitionBoard.getCurrentPlayer().getOpponent()
                         .getPlayerKing().getPiecePosition(), transitionBoard.getCurrentPlayer().getLegalMoves());
 
-        if(kingAttacks.isEmpty()) {
+        // Should this be is not empty?
+        if(!kingAttacks.isEmpty()) {
             return new MoveTransition(this.board, move, MoveStatus.LEAVE_PLAYER_IN_CHECK);
         }
 

@@ -4,6 +4,8 @@ import com.chess.engine.Alliance;
 import com.chess.engine.board.Board;
 import com.chess.engine.board.BoardUtils;
 import com.chess.engine.board.Move;
+import com.chess.engine.board.Tile;
+import com.google.common.collect.ImmutableList;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -36,17 +38,21 @@ public class Rook extends Piece {
                         isEightColumnExclusion(candidateDestinationCoordinate, candidateCoordinateOffset)) break;
                 candidateDestinationCoordinate += candidateCoordinateOffset;
                 if(BoardUtils.isValidTileCoordinate(candidateDestinationCoordinate)) {
-                    Move currMove = getMoveType(board, this, candidateDestinationCoordinate);
-                    if(currMove == null) continue;
-                    else {
-                        legalMoves.add(currMove);
-                        // This might not work
-                        if (currMove.getClass() == Move.AttackMove.class) break;
+                    final Tile candidateDestinationTile = board.getTile(candidateDestinationCoordinate);
+                    if(!candidateDestinationTile.isTileOccupied()) {
+                        legalMoves.add(new Move.MajorMove(board, this, candidateDestinationCoordinate));
+                    }else {
+                        final Piece pieceAtDestination = candidateDestinationTile.getPiece();
+                        final Alliance pieceAlliance = pieceAtDestination.getPieceAlliance();
+                        if(this.pieceAlliance != pieceAlliance) {
+                            legalMoves.add(new Move.AttackMove(board, this, candidateDestinationCoordinate, pieceAtDestination));
+                        }
+                        break;
                     }
                 }
             }
         }
-        return legalMoves;
+        return ImmutableList.copyOf(legalMoves);
     }
 
     @Override
@@ -55,7 +61,7 @@ public class Rook extends Piece {
     }
 
     @Override
-    public Piece movePiece(Move move) {
+    public Rook movePiece(Move move) {
         return new Rook(move.getDestinationCoordinate(), move.getMovePiece().getPieceAlliance());
     }
 

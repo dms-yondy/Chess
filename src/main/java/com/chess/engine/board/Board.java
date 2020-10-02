@@ -27,11 +27,13 @@ public class Board {
 
         final Collection<Move> whiteStandardLegalMoves = calculateLegalMoves(this.whitePieces);
         final Collection<Move> blackStandardLegalMoves = calculateLegalMoves(this.blackPieces);
-
         this.whitePlayer = new WhitePlayer(this, whiteStandardLegalMoves, blackStandardLegalMoves);
         this.blackPlayer = new BlackPlayer(this, whiteStandardLegalMoves, blackStandardLegalMoves);
-
         this.currentPlayer = builder.nextMoveMaker.choosePlayer(this.whitePlayer, this.blackPlayer);
+        System.out.println("Current Player Moves");
+        for(Move curr : currentPlayer.getLegalMoves()) {
+            System.out.println(curr.toString());
+        }
     }
 
     @Override
@@ -71,7 +73,7 @@ public class Board {
 
     private static List<Tile> createGameBoard(final Builder builder) {
         final Tile[] tiles = new Tile[BoardUtils.NUM_TILE];
-        for(int i = 0; i < tiles.length; i++) {
+        for(int i = 0; i < BoardUtils.NUM_TILE; i++) {
             tiles[i] = Tile.createTile(i, builder.boardConfig.get(i));
         }
         return ImmutableList.copyOf(tiles);
