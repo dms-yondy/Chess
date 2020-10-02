@@ -135,6 +135,7 @@ public class Table {
                             final MoveTransition transition = chessBoard.getCurrentPlayer().makeMove(move);
                             System.out.println(transition.getMoveStatus());
                             if(transition.getMoveStatus().isDone()) {
+                                move.getMovePiece();
                                 chessBoard = transition.getTransitionBoard();
                             }
                             sourceTile = null;
