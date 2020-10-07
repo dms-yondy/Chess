@@ -184,6 +184,7 @@ public class Table {
         public void drawTile(final Board chessBoard) {
             assignTileColour();
             assignTitlePieceIcon(chessBoard);
+            highlightLegals(chessBoard);
             validate();
             repaint();
         }
@@ -200,6 +201,20 @@ public class Table {
 
                 }
 
+            }
+        }
+
+        private void highlightLegals(final Board board) {
+            if(true) {
+                for(final Move move : pieceLegalMoves(board)) {
+                    if(move.getDestinationCoordinate() == this.tileId) {
+                        try {
+                            add(new JLabel(new ImageIcon(ImageIO.read(new File("art/misc/green_dot.png")))));
+                        } catch(Exception e) {
+                            e.printStackTrace();
+                        }
+                    }
+                }
             }
         }
 
