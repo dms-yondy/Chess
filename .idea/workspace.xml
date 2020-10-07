@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b47c26b-c6b7-4b43-81b6-8c5f2401f2b5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chess/gui/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chess/gui/Table.java" afterDir="false" />
-    </list>
+    <list default="true" id="4b47c26b-c6b7-4b43-81b6-8c5f2401f2b5" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -202,7 +199,21 @@
       <option name="project" value="LOCAL" />
       <updated>1601636084684</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="added BoardDirection Enum in Table class">
+      <created>1602052233296</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1602052233296</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Add BoardDirection member to Table class">
+      <created>1602052469263</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1602052469263</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -216,7 +227,9 @@
     <MESSAGE value="Fixed bug on leave king in check method" />
     <MESSAGE value="Fixed bug so pawns can now move two spaces on first move" />
     <MESSAGE value="changed queen legal move method, so it no longer turns into a rook or bishop when the piece is moved" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed queen legal move method, so it no longer turns into a rook or bishop when the piece is moved" />
+    <MESSAGE value="added BoardDirection Enum in Table class" />
+    <MESSAGE value="Add BoardDirection member to Table class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add BoardDirection member to Table class" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2053" y="112" key="#com.intellij.ide.util.MemberChooser" timestamp="1599491452721">
@@ -243,11 +256,11 @@
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state x="1953" y="366" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1598698370608" />
-    <state x="1852" y="23" key="CommitChangelistDialog2" timestamp="1601636084406">
-      <screen x="1280" y="23" width="1920" height="1032" />
+    <state x="1852" y="23" key="CommitChangelistDialog2" timestamp="1602052468963">
+      <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state x="1852" y="23" key="CommitChangelistDialog2/0.23.1280.752/1280.23.1920.1032@1280.23.1920.1032" timestamp="1601636084406" />
-    <state x="1852" y="23" key="CommitChangelistDialog2/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1599733397391" />
+    <state x="1852" y="23" key="CommitChangelistDialog2/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1602052468963" />
     <state x="2120" y="303" key="Github.ShareDialog" timestamp="1598620667185">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
@@ -256,26 +269,26 @@
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state x="2047" y="104" key="Github.UntrackedFilesDialog/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1598620694454" />
-    <state width="1878" height="279" key="GridCell.Tab.0.bottom" timestamp="1601636110093">
-      <screen x="1280" y="23" width="1920" height="1032" />
+    <state width="1878" height="279" key="GridCell.Tab.0.bottom" timestamp="1602052502923">
+      <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state width="1878" height="279" key="GridCell.Tab.0.bottom/0.23.1280.752/1280.23.1920.1032@1280.23.1920.1032" timestamp="1601636110093" />
-    <state width="1878" height="288" key="GridCell.Tab.0.bottom/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1600370343551" />
-    <state width="1878" height="279" key="GridCell.Tab.0.center" timestamp="1601636110092">
-      <screen x="1280" y="23" width="1920" height="1032" />
+    <state width="1878" height="279" key="GridCell.Tab.0.bottom/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1602052502923" />
+    <state width="1878" height="279" key="GridCell.Tab.0.center" timestamp="1602052502922">
+      <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state width="1878" height="279" key="GridCell.Tab.0.center/0.23.1280.752/1280.23.1920.1032@1280.23.1920.1032" timestamp="1601636110092" />
-    <state width="1878" height="288" key="GridCell.Tab.0.center/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1600370343550" />
-    <state width="1878" height="279" key="GridCell.Tab.0.left" timestamp="1601636110091">
-      <screen x="1280" y="23" width="1920" height="1032" />
+    <state width="1878" height="279" key="GridCell.Tab.0.center/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1602052502922" />
+    <state width="1878" height="279" key="GridCell.Tab.0.left" timestamp="1602052502921">
+      <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state width="1878" height="279" key="GridCell.Tab.0.left/0.23.1280.752/1280.23.1920.1032@1280.23.1920.1032" timestamp="1601636110091" />
-    <state width="1878" height="288" key="GridCell.Tab.0.left/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1600370343549" />
-    <state width="1878" height="279" key="GridCell.Tab.0.right" timestamp="1601636110092">
-      <screen x="1280" y="23" width="1920" height="1032" />
+    <state width="1878" height="279" key="GridCell.Tab.0.left/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1602052502921" />
+    <state width="1878" height="279" key="GridCell.Tab.0.right" timestamp="1602052502922">
+      <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state width="1878" height="279" key="GridCell.Tab.0.right/0.23.1280.752/1280.23.1920.1032@1280.23.1920.1032" timestamp="1601636110092" />
-    <state width="1878" height="288" key="GridCell.Tab.0.right/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1600370343551" />
+    <state width="1878" height="279" key="GridCell.Tab.0.right/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1602052502922" />
     <state x="1840" y="136" key="Vcs.Push.Dialog.v2" timestamp="1601636088262">
       <screen x="1280" y="23" width="1920" height="1032" />
     </state>

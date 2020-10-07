@@ -215,6 +215,21 @@ public class Table {
         }
     }
 
+    private JMenu createPreferencesMenu() {
+
+        final JMenu preferencesMenu = new JMenu("Preferences");
+        final JMenuItem  flipBoardMenuItem = new JMenuItem("Flip Board");
+        flipBoardMenuItem.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                boardDirection = boardDirection.opposite();
+                boardPanel.drawBoard(chessBoard);
+            }
+        });
+        preferencesMenu.add(flipBoardMenuItem);
+        return preferencesMenu;
+    }
+
     public enum BoardDirection {
 
         NORMAL {
