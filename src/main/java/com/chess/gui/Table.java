@@ -19,6 +19,8 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 
 import static javax.swing.SwingUtilities.isLeftMouseButton;
@@ -199,6 +201,13 @@ public class Table {
                 }
 
             }
+        }
+
+        private Collection<Move> pieceLegalMoves(final Board board) {
+            if(humanMovedPiece != null && humanMovedPiece.getPieceAlliance() == board.getCurrentPlayer().getAlliance()) {
+                return humanMovedPiece.calculateLegalMoves(board);
+            }
+            return Collections.emptyList();
         }
 
         private void assignTileColour() {
