@@ -101,7 +101,7 @@ public class Table {
 
         public void drawBoard(final Board chessBoard) {
             removeAll();
-            for(final TilePanel tilePanel : boardTiles) {
+            for(final TilePanel tilePanel : boardDirection.traverse(boardTiles)) {
                 tilePanel.drawTile(chessBoard);
                 add(tilePanel);
             }

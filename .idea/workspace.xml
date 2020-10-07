@@ -213,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602052469263</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Added createPreferences method in Table class">
+      <created>1602052828995</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1602052828995</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -229,7 +236,8 @@
     <MESSAGE value="changed queen legal move method, so it no longer turns into a rook or bishop when the piece is moved" />
     <MESSAGE value="added BoardDirection Enum in Table class" />
     <MESSAGE value="Add BoardDirection member to Table class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add BoardDirection member to Table class" />
+    <MESSAGE value="Added createPreferences method in Table class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added createPreferences method in Table class" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2053" y="112" key="#com.intellij.ide.util.MemberChooser" timestamp="1599491452721">
@@ -256,11 +264,11 @@
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state x="1953" y="366" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1598698370608" />
-    <state x="1852" y="23" key="CommitChangelistDialog2" timestamp="1602052468963">
+    <state x="1852" y="23" key="CommitChangelistDialog2" timestamp="1602052828664">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state x="1852" y="23" key="CommitChangelistDialog2/0.23.1280.752/1280.23.1920.1032@1280.23.1920.1032" timestamp="1601636084406" />
-    <state x="1852" y="23" key="CommitChangelistDialog2/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1602052468963" />
+    <state x="1852" y="23" key="CommitChangelistDialog2/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1602052828664" />
     <state x="2120" y="303" key="Github.ShareDialog" timestamp="1598620667185">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
@@ -289,11 +297,11 @@
     </state>
     <state width="1878" height="279" key="GridCell.Tab.0.right/0.23.1280.752/1280.23.1920.1032@1280.23.1920.1032" timestamp="1601636110092" />
     <state width="1878" height="279" key="GridCell.Tab.0.right/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1602052502922" />
-    <state x="1840" y="136" key="Vcs.Push.Dialog.v2" timestamp="1601636088262">
-      <screen x="1280" y="23" width="1920" height="1032" />
+    <state x="1840" y="139" key="Vcs.Push.Dialog.v2" timestamp="1602052832363">
+      <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state x="1840" y="136" key="Vcs.Push.Dialog.v2/0.23.1280.752/1280.23.1920.1032@1280.23.1920.1032" timestamp="1601636088262" />
-    <state x="1840" y="139" key="Vcs.Push.Dialog.v2/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1599733403251" />
+    <state x="1840" y="139" key="Vcs.Push.Dialog.v2/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1602052832363" />
     <state x="1786" y="294" width="907" height="617" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1600072992871">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
