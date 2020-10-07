@@ -33,6 +33,7 @@ public class Table {
     private Tile sourceTile;
     private Tile destinationTile;
     private Piece humanMovedPiece;
+    private BoardDirection boardDirection;
 
     private final static Dimension OUTER_FRAME_DIMENSION = new Dimension(600, 600);
     private final static Dimension BOARD_PANEL_DIMENSION = new Dimension(400, 350);
@@ -52,6 +53,7 @@ public class Table {
         this.gameFrame.setSize(OUTER_FRAME_DIMENSION);
         this.gameFrame.setVisible(true);
         this.gameFrame.add(this.boardPanel, BorderLayout.CENTER);
+        this.boardDirection = BoardDirection.NORMAL;
     }
 
     private JMenuBar createTableMenuBar() {
