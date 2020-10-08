@@ -38,7 +38,7 @@ public class Pawn extends Piece {
                 final int behindCandidateDestinationCoordinate = this.piecePosition + this.pieceAlliance.getDirection() * 8;
                 if(!board.getTile(behindCandidateDestinationCoordinate).isTileOccupied() &&
                         !board.getTile(candidateDestinationCoordinate).isTileOccupied()) {
-                    legalMoves.add(new Move.MajorMove(board, this, candidateDestinationCoordinate));
+                    legalMoves.add(new Move.PawnJump(board, this, candidateDestinationCoordinate));
                 }
             }
             else if((currentCandidateOffset == 7 && !((BoardUtils.EIGHTH_COLUMN[this.piecePosition] && this.pieceAlliance.isWhite())
@@ -46,8 +46,8 @@ public class Pawn extends Piece {
                 if(board.getTile(candidateDestinationCoordinate).isTileOccupied()) {
                     final Piece pieceOnCandidate = board.getTile(candidateDestinationCoordinate).getPiece();
                     if(pieceOnCandidate.getPieceAlliance() != this.pieceAlliance) {
-                        legalMoves.add(new Move.MajorMove(board, this,
-                                candidateDestinationCoordinate));
+                        legalMoves.add(new Move.AttackMove(board, this,
+                                candidateDestinationCoordinate, pieceOnCandidate));
                     }
                 }
             }else if(currentCandidateOffset == 9 && !((BoardUtils.EIGHTH_COLUMN[this.piecePosition] && this.pieceAlliance.isBlack())
@@ -55,8 +55,8 @@ public class Pawn extends Piece {
                 if(board.getTile(candidateDestinationCoordinate).isTileOccupied()) {
                     final Piece pieceOnCandidate = board.getTile(candidateDestinationCoordinate).getPiece();
                     if(pieceOnCandidate.getPieceAlliance() != this.pieceAlliance) {
-                        legalMoves.add(new Move.MajorMove(board, this,
-                                candidateDestinationCoordinate));
+                        legalMoves.add(new Move.AttackMove(board, this,
+                                candidateDestinationCoordinate, pieceOnCandidate));
                     }
                 }
             }
