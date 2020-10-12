@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b47c26b-c6b7-4b43-81b6-8c5f2401f2b5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chess/engine/pieces/Pawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chess/engine/pieces/Pawn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chess/gui/GameHistoryPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chess/gui/TakenPiecesPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chess/engine/board/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chess/engine/board/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chess/engine/board/BoardUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chess/engine/board/BoardUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chess/engine/board/Move.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chess/engine/board/Move.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chess/engine/pieces/Piece.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chess/engine/pieces/Piece.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chess/gui/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chess/gui/Table.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -264,7 +271,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602135972044</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Changed type of pawn moves depending on the type of move">
+      <created>1602136711804</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1602136711804</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -287,7 +301,8 @@
     <MESSAGE value="Fixed bug for the legal moves of the queen" />
     <MESSAGE value="Fixed bug for the black pawn first move" />
     <MESSAGE value="Added a highlight legal moves options to the gui" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a highlight legal moves options to the gui" />
+    <MESSAGE value="Changed type of pawn moves depending on the type of move" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed type of pawn moves depending on the type of move" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2053" y="112" key="#com.intellij.ide.util.MemberChooser" timestamp="1599491452721">
@@ -314,11 +329,11 @@
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state x="1953" y="366" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1598698370608" />
-    <state x="1852" y="23" key="CommitChangelistDialog2" timestamp="1602135971486">
+    <state x="1852" y="23" key="CommitChangelistDialog2" timestamp="1602136711487">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state x="1852" y="23" key="CommitChangelistDialog2/0.23.1280.752/1280.23.1920.1032@1280.23.1920.1032" timestamp="1601636084406" />
-    <state x="1852" y="23" key="CommitChangelistDialog2/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1602135971486" />
+    <state x="1852" y="23" key="CommitChangelistDialog2/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1602136711487" />
     <state x="2120" y="303" key="Github.ShareDialog" timestamp="1598620667185">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
@@ -327,26 +342,26 @@
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state x="2047" y="104" key="Github.UntrackedFilesDialog/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1598620694454" />
-    <state width="1878" height="279" key="GridCell.Tab.0.bottom" timestamp="1602073089822">
+    <state width="1878" height="287" key="GridCell.Tab.0.bottom" timestamp="1602491434679">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state width="1878" height="279" key="GridCell.Tab.0.bottom/0.23.1280.752/1280.23.1920.1032@1280.23.1920.1032" timestamp="1601636110093" />
-    <state width="1878" height="279" key="GridCell.Tab.0.bottom/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1602073089822" />
-    <state width="1878" height="279" key="GridCell.Tab.0.center" timestamp="1602073089819">
+    <state width="1878" height="287" key="GridCell.Tab.0.bottom/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1602491434679" />
+    <state width="1878" height="287" key="GridCell.Tab.0.center" timestamp="1602491434676">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state width="1878" height="279" key="GridCell.Tab.0.center/0.23.1280.752/1280.23.1920.1032@1280.23.1920.1032" timestamp="1601636110092" />
-    <state width="1878" height="279" key="GridCell.Tab.0.center/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1602073089819" />
-    <state width="1878" height="279" key="GridCell.Tab.0.left" timestamp="1602073089816">
+    <state width="1878" height="287" key="GridCell.Tab.0.center/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1602491434676" />
+    <state width="1878" height="287" key="GridCell.Tab.0.left" timestamp="1602491434675">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state width="1878" height="279" key="GridCell.Tab.0.left/0.23.1280.752/1280.23.1920.1032@1280.23.1920.1032" timestamp="1601636110091" />
-    <state width="1878" height="279" key="GridCell.Tab.0.left/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1602073089816" />
-    <state width="1878" height="279" key="GridCell.Tab.0.right" timestamp="1602073089820">
+    <state width="1878" height="287" key="GridCell.Tab.0.left/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1602491434675" />
+    <state width="1878" height="287" key="GridCell.Tab.0.right" timestamp="1602491434676">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state width="1878" height="279" key="GridCell.Tab.0.right/0.23.1280.752/1280.23.1920.1032@1280.23.1920.1032" timestamp="1601636110092" />
-    <state width="1878" height="279" key="GridCell.Tab.0.right/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1602073089820" />
+    <state width="1878" height="287" key="GridCell.Tab.0.right/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1602491434676" />
     <state x="1840" y="139" key="Vcs.Push.Dialog.v2" timestamp="1602062905954">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
@@ -356,6 +371,10 @@
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state x="1786" y="294" width="907" height="617" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1600072992870" />
+    <state x="1839" y="164" key="new project wizard" timestamp="1602232970256">
+      <screen x="1280" y="23" width="1920" height="1057" />
+    </state>
+    <state x="1839" y="164" key="new project wizard/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1602232970256" />
     <state x="2030" y="325" key="refactoring.ChangeSignatureDialog" timestamp="1599040114241">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
