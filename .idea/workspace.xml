@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b47c26b-c6b7-4b43-81b6-8c5f2401f2b5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/chess/engine/board/Move.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chess/engine/board/Move.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -306,13 +307,31 @@
       <option name="project" value="LOCAL" />
       <updated>1602571687475</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Added equals method to PawnMove class">
+      <created>1602571860337</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1602571860337</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Added toString method in PawnMove class">
+      <created>1602571979403</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1602571979403</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Made parameter of equals method in PawnAttackMove class final">
+      <created>1602572037654</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1602572037654</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added Tile stub class" />
-    <MESSAGE value="Implemented tile class" />
-    <MESSAGE value="Added Board and Move stub classes&#10;Added Enum Alliance class&#10;Implemented Piece and Knight classes" />
     <MESSAGE value="Finished Knight class implementation" />
     <MESSAGE value="Added all the piece classes&#10;Board implemented" />
     <MESSAGE value="Implemented Move class" />
@@ -335,7 +354,10 @@
     <MESSAGE value="Added null move getCoordinate method which returns -1" />
     <MESSAGE value="Added equals method to pawnAttackMove class" />
     <MESSAGE value="Added toString method in pawnAttackMove class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added toString method in pawnAttackMove class" />
+    <MESSAGE value="Added equals method to PawnMove class" />
+    <MESSAGE value="Added toString method in PawnMove class" />
+    <MESSAGE value="Made parameter of equals method in PawnAttackMove class final" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made parameter of equals method in PawnAttackMove class final" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2053" y="112" key="#com.intellij.ide.util.MemberChooser" timestamp="1599491452721">
@@ -362,11 +384,11 @@
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state x="1953" y="366" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1598698370608" />
-    <state x="1852" y="23" key="CommitChangelistDialog2" timestamp="1602571687177">
+    <state x="2014" y="23" key="CommitChangelistDialog2" timestamp="1602572037342">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state x="1852" y="23" key="CommitChangelistDialog2/0.23.1280.752/1280.23.1920.1032@1280.23.1920.1032" timestamp="1601636084406" />
-    <state x="1852" y="23" key="CommitChangelistDialog2/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1602571687177" />
+    <state x="2014" y="23" key="CommitChangelistDialog2/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1602572037342" />
     <state x="2120" y="303" key="Github.ShareDialog" timestamp="1598620667185">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
