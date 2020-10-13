@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b47c26b-c6b7-4b43-81b6-8c5f2401f2b5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chess/engine/board/Move.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chess/engine/board/Move.java" afterDir="false" />
-    </list>
+    <list default="true" id="4b47c26b-c6b7-4b43-81b6-8c5f2401f2b5" name="Default Changelist" comment="Added equals and hashCode methods to CastleMove class" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -341,11 +339,28 @@
       <option name="project" value="LOCAL" />
       <updated>1602574906267</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Added equals and hashCode methods to CastleMove class">
+      <created>1602575408009</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1602575408009</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Implemented Move class" />
     <MESSAGE value="refactored gui&#10;add new art assets" />
     <MESSAGE value="Fixed bug on leave king in check method" />
     <MESSAGE value="Fixed bug so pawns can now move two spaces on first move" />
@@ -370,7 +385,8 @@
     <MESSAGE value="Made parameter of equals method in PawnAttackMove class final" />
     <MESSAGE value="Created MajorAttackMove class" />
     <MESSAGE value="Added equals and execute method to en Passant class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added equals and execute method to en Passant class" />
+    <MESSAGE value="Added equals and hashCode methods to CastleMove class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added equals and hashCode methods to CastleMove class" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2053" y="112" key="#com.intellij.ide.util.MemberChooser" timestamp="1599491452721">
@@ -397,11 +413,11 @@
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state x="1953" y="366" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1598698370608" />
-    <state x="2163" y="27" key="CommitChangelistDialog2" timestamp="1602574905923">
+    <state x="2163" y="27" key="CommitChangelistDialog2" timestamp="1602575348016">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state x="1852" y="23" key="CommitChangelistDialog2/0.23.1280.752/1280.23.1920.1032@1280.23.1920.1032" timestamp="1601636084406" />
-    <state x="2163" y="27" key="CommitChangelistDialog2/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1602574905923" />
+    <state x="2163" y="27" key="CommitChangelistDialog2/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1602575348016" />
     <state x="2120" y="303" key="Github.ShareDialog" timestamp="1598620667185">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
