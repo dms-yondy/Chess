@@ -145,6 +145,11 @@ public abstract class Move {
             return this == other || other instanceof AttackMove && super.equals(other);
         }
 
+        @Override
+        public String toString() {
+            return BoardUtils.getPositionAtCoordinate(this.destinationCoordinate);
+        }
+
     }
 
     public static final class PawnAttackMove extends AttackMove {
