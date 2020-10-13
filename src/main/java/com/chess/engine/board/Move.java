@@ -201,6 +201,28 @@ public abstract class Move {
             super(board, movePiece, destinationCoordinate, attackedPiece);
             this.attackedPiece = attackedPiece;
         }
+
+        public boolean equals(final Object other) {
+            return this == other || (other instanceof  PawnEnPassantPawnAttackMove && super.equals(other));
+        }
+
+        @Override
+        public Board execute() {
+            final Board.Builder builder = new Board.Builder();
+            for(final Piece piece : this.board.getCurrentPlayer().getActivePieces()) {
+                if(!this.movePiece.equals(piece)) {
+                    builder.setPiece(piece);
+                }
+            }
+            for(final Piece piece : this.board.getCurrentPlayer().getOpponent().getActivePieces()) {
+                if(!piece.equals(this.getAttackedPiece())) {
+                    builder.setPiece(piece);
+                }
+            }
+            builder.setPiece(this.movePiece.movePiece(this));
+            builder.setMoveMaker(this.board.getCurrentPlayer().getOpponent().getAlliance());
+            return builder.build();
+        }
     }
 
     public static final class PawnJump extends Move {
