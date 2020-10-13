@@ -265,7 +265,12 @@ public abstract class Move {
     public static final class NullMove extends Move {
 
         public NullMove() {
-            super(null, null, -1);
+            super(null, null, 65);
+        }
+
+        @Override
+        public int getCurrentCoordinate() {
+            return -1;
         }
 
         @Override
