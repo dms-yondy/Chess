@@ -163,7 +163,7 @@ public abstract class Move {
         }
 
         @Override
-        public boolean equals(Object other) {
+        public boolean equals(final Object other) {
             return this == other || other instanceof PawnAttackMove && super.equals(other);
         }
 
