@@ -340,6 +340,11 @@ public abstract class Move {
         }
 
         @Override
+        public boolean equals(Object other) {
+            return this == other || (other instanceof QueenSideCastleMove && super.equals(other));
+        }
+
+        @Override
         public String toString() {
             return "O-O-O";
         }
