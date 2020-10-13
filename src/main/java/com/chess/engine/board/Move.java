@@ -140,6 +140,11 @@ public abstract class Move {
             super(board, movePiece, destinationCoordinate);
         }
 
+        @Override
+        public boolean equals(final Object other) {
+            return this == other || other instanceof AttackMove && super.equals(other);
+        }
+
     }
 
     public static final class PawnAttackMove extends AttackMove {

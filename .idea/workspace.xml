@@ -292,7 +292,21 @@
       <option name="project" value="LOCAL" />
       <updated>1602571151653</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Added equals method to pawnAttackMove class">
+      <created>1602571562153</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1602571562153</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Added toString method in pawnAttackMove class">
+      <created>1602571687475</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1602571687475</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -319,7 +333,9 @@
     <MESSAGE value="Added GameHistoryPanel to gui" />
     <MESSAGE value="Fixed bug so the taken pieces now display correctly on the panel" />
     <MESSAGE value="Added null move getCoordinate method which returns -1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added null move getCoordinate method which returns -1" />
+    <MESSAGE value="Added equals method to pawnAttackMove class" />
+    <MESSAGE value="Added toString method in pawnAttackMove class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added toString method in pawnAttackMove class" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2053" y="112" key="#com.intellij.ide.util.MemberChooser" timestamp="1599491452721">
@@ -346,11 +362,11 @@
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state x="1953" y="366" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1598698370608" />
-    <state x="1852" y="23" key="CommitChangelistDialog2" timestamp="1602571151164">
+    <state x="1852" y="23" key="CommitChangelistDialog2" timestamp="1602571687177">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state x="1852" y="23" key="CommitChangelistDialog2/0.23.1280.752/1280.23.1920.1032@1280.23.1920.1032" timestamp="1601636084406" />
-    <state x="1852" y="23" key="CommitChangelistDialog2/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1602571151164" />
+    <state x="1852" y="23" key="CommitChangelistDialog2/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1602571687177" />
     <state x="2120" y="303" key="Github.ShareDialog" timestamp="1598620667185">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
