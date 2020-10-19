@@ -11,6 +11,12 @@ public enum Alliance {
          public int getDirection() {
              return -1;
          }
+
+         @Override
+         public int getOppositeDirection() {
+             return 1;
+         }
+
          @Override
          public boolean isBlack() {return false;}
          @Override
@@ -26,6 +32,12 @@ public enum Alliance {
         public int getDirection() {
 return 1;
 }
+
+        @Override
+        public int getOppositeDirection() {
+            return -1;
+        }
+
         @Override
         public boolean isBlack() {return true;}
         @Override
@@ -38,6 +50,7 @@ return 1;
     };
 
     public abstract int getDirection();
+    public abstract int getOppositeDirection();
     public abstract boolean isBlack();
     public abstract boolean isWhite();
 
