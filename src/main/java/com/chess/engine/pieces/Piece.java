@@ -49,7 +49,7 @@ public abstract class Piece {
             final Piece pieceAtDestinationTile = candidateDestinationTile.getPiece();
             final Alliance pieceAlliance = pieceAtDestinationTile.getPieceAlliance();
             if(this.pieceAlliance != pieceAlliance) {
-                return new Move.AttackMove(board, this,
+                return new Move.MajorAttackMove(board, this,
                         candidateDestinationCoordinate, pieceAtDestinationTile);
             }
         }
