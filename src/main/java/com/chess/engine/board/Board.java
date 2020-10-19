@@ -77,6 +77,10 @@ public class Board {
         return ImmutableList.copyOf(tiles);
     }
 
+    public Pawn getEnPassantPawn() {
+        return this.enPassantPawn;
+    }
+
     public static Board createStandardBoard() {
         final Builder builder = new Builder();
 

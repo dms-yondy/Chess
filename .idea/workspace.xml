@@ -22,7 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b47c26b-c6b7-4b43-81b6-8c5f2401f2b5" name="Default Changelist" comment="Changed attack moves to major attack moves">
+    <list default="true" id="4b47c26b-c6b7-4b43-81b6-8c5f2401f2b5" name="Default Changelist" comment="Created enPassantPawn member in the board class and in the builder class.">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/chess/engine/board/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chess/engine/board/Board.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -387,7 +387,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603083907158</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Created enPassantPawn member in the board class and in the builder class.">
+      <created>1603084243280</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1603084243281</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -403,7 +410,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="changed queen legal move method, so it no longer turns into a rook or bishop when the piece is moved" />
     <MESSAGE value="added BoardDirection Enum in Table class" />
     <MESSAGE value="Add BoardDirection member to Table class" />
     <MESSAGE value="Added createPreferences method in Table class" />
@@ -428,7 +434,8 @@
     <MESSAGE value="Added equals method to KingSideCastleMove" />
     <MESSAGE value="Added equals method to QueenSideCastleMove class" />
     <MESSAGE value="Changed attack moves to major attack moves" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed attack moves to major attack moves" />
+    <MESSAGE value="Created enPassantPawn member in the board class and in the builder class." />
+    <option name="LAST_COMMIT_MESSAGE" value="Created enPassantPawn member in the board class and in the builder class." />
   </component>
   <component name="WindowStateProjectService">
     <state x="2053" y="112" key="#com.intellij.ide.util.MemberChooser" timestamp="1599491452721">
