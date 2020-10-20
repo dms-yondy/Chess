@@ -1,6 +1,5 @@
 package com.chess.engine.board;
 
-import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableMap;
 
 import java.util.*;

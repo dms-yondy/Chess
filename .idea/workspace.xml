@@ -22,9 +22,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b47c26b-c6b7-4b43-81b6-8c5f2401f2b5" name="Default Changelist" comment="Added en passant move for pawn piece">
+    <list default="true" id="4b47c26b-c6b7-4b43-81b6-8c5f2401f2b5" name="Default Changelist" comment="Added isPawnPromotionSquare to Alliance Enum">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/chess/engine/Alliance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chess/engine/Alliance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chess/engine/board/BoardUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chess/engine/board/BoardUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chess/engine/board/Move.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chess/engine/board/Move.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chess/engine/pieces/Pawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chess/engine/pieces/Pawn.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -409,7 +412,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603086133000</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Added isPawnPromotionSquare to Alliance Enum">
+      <created>1603175845113</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1603175845113</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -425,7 +435,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added createPreferences method in Table class" />
     <MESSAGE value="changed drawBoard method" />
     <MESSAGE value="Added createPreferencesMenu instance to crateTableMenuBar method" />
     <MESSAGE value="added pieceLegalMoves to Table class" />
@@ -450,13 +459,14 @@
     <MESSAGE value="Created enPassantPawn member in the board class and in the builder class." />
     <MESSAGE value="Added getEnPassantPawn method in Board class" />
     <MESSAGE value="Added en passant move for pawn piece" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added en passant move for pawn piece" />
+    <MESSAGE value="Added isPawnPromotionSquare to Alliance Enum" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added isPawnPromotionSquare to Alliance Enum" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2053" y="112" key="#com.intellij.ide.util.MemberChooser" timestamp="1603085003855">
+    <state x="2053" y="112" key="#com.intellij.ide.util.MemberChooser" timestamp="1603175721778">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
-    <state x="2053" y="112" key="#com.intellij.ide.util.MemberChooser/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1603085003855" />
+    <state x="2053" y="112" key="#com.intellij.ide.util.MemberChooser/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1603175721778" />
     <state x="1957" y="419" key="#com.intellij.refactoring.memberPullUp.PullUpDialog" timestamp="1599462687498">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
@@ -490,26 +500,26 @@
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state x="2047" y="104" key="Github.UntrackedFilesDialog/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1598620694454" />
-    <state width="1878" height="287" key="GridCell.Tab.0.bottom" timestamp="1603090414095">
+    <state width="1878" height="287" key="GridCell.Tab.0.bottom" timestamp="1603179223833">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state width="1878" height="279" key="GridCell.Tab.0.bottom/0.23.1280.752/1280.23.1920.1032@1280.23.1920.1032" timestamp="1601636110093" />
-    <state width="1878" height="287" key="GridCell.Tab.0.bottom/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1603090414095" />
-    <state width="1878" height="287" key="GridCell.Tab.0.center" timestamp="1603090414094">
+    <state width="1878" height="287" key="GridCell.Tab.0.bottom/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1603179223833" />
+    <state width="1878" height="287" key="GridCell.Tab.0.center" timestamp="1603179223832">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state width="1878" height="279" key="GridCell.Tab.0.center/0.23.1280.752/1280.23.1920.1032@1280.23.1920.1032" timestamp="1601636110092" />
-    <state width="1878" height="287" key="GridCell.Tab.0.center/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1603090414094" />
-    <state width="1878" height="287" key="GridCell.Tab.0.left" timestamp="1603090414093">
+    <state width="1878" height="287" key="GridCell.Tab.0.center/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1603179223832" />
+    <state width="1878" height="287" key="GridCell.Tab.0.left" timestamp="1603179223831">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state width="1878" height="279" key="GridCell.Tab.0.left/0.23.1280.752/1280.23.1920.1032@1280.23.1920.1032" timestamp="1601636110091" />
-    <state width="1878" height="287" key="GridCell.Tab.0.left/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1603090414093" />
-    <state width="1878" height="287" key="GridCell.Tab.0.right" timestamp="1603090414094">
+    <state width="1878" height="287" key="GridCell.Tab.0.left/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1603179223831" />
+    <state width="1878" height="287" key="GridCell.Tab.0.right" timestamp="1603179223833">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state width="1878" height="279" key="GridCell.Tab.0.right/0.23.1280.752/1280.23.1920.1032@1280.23.1920.1032" timestamp="1601636110092" />
-    <state width="1878" height="287" key="GridCell.Tab.0.right/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1603090414094" />
+    <state width="1878" height="287" key="GridCell.Tab.0.right/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1603179223833" />
     <state x="1840" y="139" key="Vcs.Push.Dialog.v2" timestamp="1603086147950">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
@@ -527,11 +537,11 @@
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state x="2030" y="325" key="refactoring.ChangeSignatureDialog/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1599040114241" />
-    <state x="1905" y="247" width="670" height="676" key="search.everywhere.popup" timestamp="1601626210466">
-      <screen x="1280" y="23" width="1920" height="1032" />
+    <state x="1905" y="252" width="670" height="676" key="search.everywhere.popup" timestamp="1603177752707">
+      <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state x="1905" y="247" width="670" height="676" key="search.everywhere.popup/0.23.1280.752/1280.23.1920.1032@1280.23.1920.1032" timestamp="1601626210466" />
-    <state x="1905" y="252" key="search.everywhere.popup/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1599492546657" />
+    <state x="1905" y="252" width="670" height="676" key="search.everywhere.popup/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1603177752707" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
