@@ -22,12 +22,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b47c26b-c6b7-4b43-81b6-8c5f2401f2b5" name="Default Changelist" comment="Added isPawnPromotionSquare to Alliance Enum">
+    <list default="true" id="4b47c26b-c6b7-4b43-81b6-8c5f2401f2b5" name="Default Changelist" comment="Added pawn promotion feature">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tests/chess/engine/board/BoardTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chess/engine/Alliance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chess/engine/Alliance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chess/engine/board/BoardUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chess/engine/board/BoardUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chess/engine/board/Move.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chess/engine/board/Move.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chess/engine/pieces/Pawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chess/engine/pieces/Pawn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +43,7 @@
       <list>
         <option value="Enum" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -68,9 +68,20 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.tests.chess.engine.board" />
+    </key>
     <key name="MoveMembersDialog.RECENTS_KEY">
       <recent name="com.chess.engine.board.BoardUtils" />
     </key>
@@ -79,13 +90,15 @@
       <recent name="com.chess.engine.board.BoardUtils" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/chess" />
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.chess.engine.player" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.BoardTest">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -109,6 +122,22 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BoardTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Chess.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tests.chess.engine.board.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tests.chess.engine.board" />
+      <option name="MAIN_CLASS_NAME" value="com.tests.chess.engine.board.BoardTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -140,6 +169,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BoardTest" />
         <item itemvalue="Application.JChess" />
       </list>
     </recent_temporary>
@@ -419,7 +449,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603175845113</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Added pawn promotion feature">
+      <created>1603179359219</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1603179359219</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -435,7 +472,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="changed drawBoard method" />
     <MESSAGE value="Added createPreferencesMenu instance to crateTableMenuBar method" />
     <MESSAGE value="added pieceLegalMoves to Table class" />
     <MESSAGE value="Fixed bug for the legal moves of the queen" />
@@ -460,9 +496,14 @@
     <MESSAGE value="Added getEnPassantPawn method in Board class" />
     <MESSAGE value="Added en passant move for pawn piece" />
     <MESSAGE value="Added isPawnPromotionSquare to Alliance Enum" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added isPawnPromotionSquare to Alliance Enum" />
+    <MESSAGE value="Added pawn promotion feature" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added pawn promotion feature" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="1728" y="133" key="#Project_Structure" timestamp="1603263127413">
+      <screen x="1280" y="23" width="1920" height="1057" />
+    </state>
+    <state x="1728" y="133" key="#Project_Structure/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1603263127413" />
     <state x="2053" y="112" key="#com.intellij.ide.util.MemberChooser" timestamp="1603175721778">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
@@ -500,31 +541,39 @@
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state x="2047" y="104" key="Github.UntrackedFilesDialog/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1598620694454" />
-    <state width="1878" height="287" key="GridCell.Tab.0.bottom" timestamp="1603179223833">
+    <state width="1878" height="287" key="GridCell.Tab.0.bottom" timestamp="1603179980858">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state width="1878" height="279" key="GridCell.Tab.0.bottom/0.23.1280.752/1280.23.1920.1032@1280.23.1920.1032" timestamp="1601636110093" />
-    <state width="1878" height="287" key="GridCell.Tab.0.bottom/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1603179223833" />
-    <state width="1878" height="287" key="GridCell.Tab.0.center" timestamp="1603179223832">
+    <state width="1878" height="287" key="GridCell.Tab.0.bottom/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1603179980858" />
+    <state width="1878" height="287" key="GridCell.Tab.0.center" timestamp="1603179980858">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state width="1878" height="279" key="GridCell.Tab.0.center/0.23.1280.752/1280.23.1920.1032@1280.23.1920.1032" timestamp="1601636110092" />
-    <state width="1878" height="287" key="GridCell.Tab.0.center/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1603179223832" />
-    <state width="1878" height="287" key="GridCell.Tab.0.left" timestamp="1603179223831">
+    <state width="1878" height="287" key="GridCell.Tab.0.center/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1603179980858" />
+    <state width="1878" height="287" key="GridCell.Tab.0.left" timestamp="1603179980857">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state width="1878" height="279" key="GridCell.Tab.0.left/0.23.1280.752/1280.23.1920.1032@1280.23.1920.1032" timestamp="1601636110091" />
-    <state width="1878" height="287" key="GridCell.Tab.0.left/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1603179223831" />
-    <state width="1878" height="287" key="GridCell.Tab.0.right" timestamp="1603179223833">
+    <state width="1878" height="287" key="GridCell.Tab.0.left/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1603179980857" />
+    <state width="1878" height="287" key="GridCell.Tab.0.right" timestamp="1603179980858">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state width="1878" height="279" key="GridCell.Tab.0.right/0.23.1280.752/1280.23.1920.1032@1280.23.1920.1032" timestamp="1601636110092" />
-    <state width="1878" height="287" key="GridCell.Tab.0.right/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1603179223833" />
-    <state x="1840" y="139" key="Vcs.Push.Dialog.v2" timestamp="1603086147950">
+    <state width="1878" height="287" key="GridCell.Tab.0.right/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1603179980858" />
+    <state x="1749" y="190" key="SettingsEditor" timestamp="1603263250060">
+      <screen x="1280" y="23" width="1920" height="1057" />
+    </state>
+    <state x="1749" y="190" key="SettingsEditor/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1603263250060" />
+    <state x="1840" y="139" key="Vcs.Push.Dialog.v2" timestamp="1603179390304">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state x="1840" y="136" key="Vcs.Push.Dialog.v2/0.23.1280.752/1280.23.1920.1032@1280.23.1920.1032" timestamp="1601636088262" />
-    <state x="1840" y="139" key="Vcs.Push.Dialog.v2/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1603086147950" />
+    <state x="1840" y="139" key="Vcs.Push.Dialog.v2/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1603179390304" />
+    <state x="2014" y="272" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1603262653651">
+      <screen x="1280" y="23" width="1920" height="1057" />
+    </state>
+    <state x="2014" y="272" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1603262653651" />
     <state x="1786" y="294" width="907" height="617" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1600072992871">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
