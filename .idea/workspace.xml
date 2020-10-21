@@ -22,7 +22,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b47c26b-c6b7-4b43-81b6-8c5f2401f2b5" name="Default Changelist" comment="Added a unit test" />
+    <list default="true" id="4b47c26b-c6b7-4b43-81b6-8c5f2401f2b5" name="Default Changelist" comment="added execute method in MoveStrategy">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chess/engine/player/ai/MinMax.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,8 +39,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="JUnit4 Test Class" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -458,7 +461,28 @@
       <option name="project" value="LOCAL" />
       <updated>1603263431599</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Added ai package in player package">
+      <created>1603268637451</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1603268637451</updated>
+    </task>
+    <task id="LOCAL-00042" summary="added MoveStrategy interface in ai package">
+      <created>1603268714792</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1603268714792</updated>
+    </task>
+    <task id="LOCAL-00043" summary="added execute method in MoveStrategy">
+      <created>1603268882844</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1603268882844</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -474,9 +498,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added pieceLegalMoves to Table class" />
-    <MESSAGE value="Fixed bug for the legal moves of the queen" />
-    <MESSAGE value="Fixed bug for the black pawn first move" />
     <MESSAGE value="Added a highlight legal moves options to the gui" />
     <MESSAGE value="Changed type of pawn moves depending on the type of move" />
     <MESSAGE value="Added GameHistoryPanel to gui" />
@@ -499,17 +520,20 @@
     <MESSAGE value="Added isPawnPromotionSquare to Alliance Enum" />
     <MESSAGE value="Added pawn promotion feature" />
     <MESSAGE value="Added a unit test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a unit test" />
+    <MESSAGE value="Added ai package in player package" />
+    <MESSAGE value="added MoveStrategy interface in ai package" />
+    <MESSAGE value="added execute method in MoveStrategy" />
+    <option name="LAST_COMMIT_MESSAGE" value="added execute method in MoveStrategy" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1728" y="133" key="#Project_Structure" timestamp="1603263127413">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state x="1728" y="133" key="#Project_Structure/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1603263127413" />
-    <state x="2053" y="112" key="#com.intellij.ide.util.MemberChooser" timestamp="1603175721778">
+    <state x="2053" y="112" key="#com.intellij.ide.util.MemberChooser" timestamp="1603268950816">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
-    <state x="2053" y="112" key="#com.intellij.ide.util.MemberChooser/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1603175721778" />
+    <state x="2053" y="112" key="#com.intellij.ide.util.MemberChooser/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1603268950816" />
     <state x="1957" y="419" key="#com.intellij.refactoring.memberPullUp.PullUpDialog" timestamp="1599462687498">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
@@ -543,26 +567,26 @@
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state x="2047" y="104" key="Github.UntrackedFilesDialog/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1598620694454" />
-    <state width="1878" height="287" key="GridCell.Tab.0.bottom" timestamp="1603179980858">
+    <state width="1878" height="287" key="GridCell.Tab.0.bottom" timestamp="1603268798277">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state width="1878" height="279" key="GridCell.Tab.0.bottom/0.23.1280.752/1280.23.1920.1032@1280.23.1920.1032" timestamp="1601636110093" />
-    <state width="1878" height="287" key="GridCell.Tab.0.bottom/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1603179980858" />
-    <state width="1878" height="287" key="GridCell.Tab.0.center" timestamp="1603179980858">
+    <state width="1878" height="287" key="GridCell.Tab.0.bottom/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1603268798277" />
+    <state width="1878" height="287" key="GridCell.Tab.0.center" timestamp="1603268798275">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state width="1878" height="279" key="GridCell.Tab.0.center/0.23.1280.752/1280.23.1920.1032@1280.23.1920.1032" timestamp="1601636110092" />
-    <state width="1878" height="287" key="GridCell.Tab.0.center/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1603179980858" />
-    <state width="1878" height="287" key="GridCell.Tab.0.left" timestamp="1603179980857">
+    <state width="1878" height="287" key="GridCell.Tab.0.center/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1603268798275" />
+    <state width="1878" height="287" key="GridCell.Tab.0.left" timestamp="1603268798273">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state width="1878" height="279" key="GridCell.Tab.0.left/0.23.1280.752/1280.23.1920.1032@1280.23.1920.1032" timestamp="1601636110091" />
-    <state width="1878" height="287" key="GridCell.Tab.0.left/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1603179980857" />
-    <state width="1878" height="287" key="GridCell.Tab.0.right" timestamp="1603179980858">
+    <state width="1878" height="287" key="GridCell.Tab.0.left/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1603268798273" />
+    <state width="1878" height="287" key="GridCell.Tab.0.right" timestamp="1603268798276">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state width="1878" height="279" key="GridCell.Tab.0.right/0.23.1280.752/1280.23.1920.1032@1280.23.1920.1032" timestamp="1601636110092" />
-    <state width="1878" height="287" key="GridCell.Tab.0.right/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1603179980858" />
+    <state width="1878" height="287" key="GridCell.Tab.0.right/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1603268798276" />
     <state x="1749" y="190" key="SettingsEditor" timestamp="1603263250060">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
