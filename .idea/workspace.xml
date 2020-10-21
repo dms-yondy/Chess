@@ -22,12 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b47c26b-c6b7-4b43-81b6-8c5f2401f2b5" name="Default Changelist" comment="Added pawn promotion feature">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tests/chess/engine/board/BoardTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-    </list>
+    <list default="true" id="4b47c26b-c6b7-4b43-81b6-8c5f2401f2b5" name="Default Changelist" comment="Added a unit test" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -456,7 +451,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603179359219</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Added a unit test">
+      <created>1603263431599</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1603263431599</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -472,7 +474,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added createPreferencesMenu instance to crateTableMenuBar method" />
     <MESSAGE value="added pieceLegalMoves to Table class" />
     <MESSAGE value="Fixed bug for the legal moves of the queen" />
     <MESSAGE value="Fixed bug for the black pawn first move" />
@@ -497,7 +498,8 @@
     <MESSAGE value="Added en passant move for pawn piece" />
     <MESSAGE value="Added isPawnPromotionSquare to Alliance Enum" />
     <MESSAGE value="Added pawn promotion feature" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added pawn promotion feature" />
+    <MESSAGE value="Added a unit test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a unit test" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1728" y="133" key="#Project_Structure" timestamp="1603263127413">
