@@ -22,7 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b47c26b-c6b7-4b43-81b6-8c5f2401f2b5" name="Default Changelist" comment="Added BoardEvaluator member, constructor and toString method to MinMax class">
+    <list default="true" id="4b47c26b-c6b7-4b43-81b6-8c5f2401f2b5" name="Default Changelist" comment="Added min and max methods in MinMax class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/chess/engine/player/ai/MinMax.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chess/engine/player/ai/MinMax.java" afterDir="false" />
     </list>
@@ -511,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603269382693</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="Added min and max methods in MinMax class">
+      <created>1603694807419</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1603694807419</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -527,7 +534,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added null move getCoordinate method which returns -1" />
     <MESSAGE value="Added equals method to pawnAttackMove class" />
     <MESSAGE value="Added toString method in pawnAttackMove class" />
     <MESSAGE value="Added equals method to PawnMove class" />
@@ -552,7 +558,8 @@
     <MESSAGE value="added BoardEvaluator interface in ai package" />
     <MESSAGE value="added assets for gui" />
     <MESSAGE value="Added BoardEvaluator member, constructor and toString method to MinMax class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added BoardEvaluator member, constructor and toString method to MinMax class" />
+    <MESSAGE value="Added min and max methods in MinMax class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added min and max methods in MinMax class" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1728" y="133" key="#Project_Structure" timestamp="1603263127413">
