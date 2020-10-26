@@ -22,7 +22,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b47c26b-c6b7-4b43-81b6-8c5f2401f2b5" name="Default Changelist" comment="added assets for gui">
+    <list default="true" id="4b47c26b-c6b7-4b43-81b6-8c5f2401f2b5" name="Default Changelist" comment="Added BoardEvaluator member, constructor and toString method to MinMax class">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/chess/engine/player/ai/MinMax.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chess/engine/player/ai/MinMax.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -503,7 +504,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603269203155</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="Added BoardEvaluator member, constructor and toString method to MinMax class">
+      <created>1603269382693</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1603269382693</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -519,7 +527,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixed bug so the taken pieces now display correctly on the panel" />
     <MESSAGE value="Added null move getCoordinate method which returns -1" />
     <MESSAGE value="Added equals method to pawnAttackMove class" />
     <MESSAGE value="Added toString method in pawnAttackMove class" />
@@ -544,7 +551,8 @@
     <MESSAGE value="added MinMax class in ai package" />
     <MESSAGE value="added BoardEvaluator interface in ai package" />
     <MESSAGE value="added assets for gui" />
-    <option name="LAST_COMMIT_MESSAGE" value="added assets for gui" />
+    <MESSAGE value="Added BoardEvaluator member, constructor and toString method to MinMax class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added BoardEvaluator member, constructor and toString method to MinMax class" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1728" y="133" key="#Project_Structure" timestamp="1603263127413">
@@ -588,35 +596,35 @@
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state x="2047" y="104" key="Github.UntrackedFilesDialog/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1598620694454" />
-    <state width="1878" height="287" key="GridCell.Tab.0.bottom" timestamp="1603268798277">
+    <state width="1878" height="287" key="GridCell.Tab.0.bottom" timestamp="1603269976130">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state width="1878" height="279" key="GridCell.Tab.0.bottom/0.23.1280.752/1280.23.1920.1032@1280.23.1920.1032" timestamp="1601636110093" />
-    <state width="1878" height="287" key="GridCell.Tab.0.bottom/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1603268798277" />
-    <state width="1878" height="287" key="GridCell.Tab.0.center" timestamp="1603268798275">
+    <state width="1878" height="287" key="GridCell.Tab.0.bottom/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1603269976130" />
+    <state width="1878" height="287" key="GridCell.Tab.0.center" timestamp="1603269976129">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state width="1878" height="279" key="GridCell.Tab.0.center/0.23.1280.752/1280.23.1920.1032@1280.23.1920.1032" timestamp="1601636110092" />
-    <state width="1878" height="287" key="GridCell.Tab.0.center/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1603268798275" />
-    <state width="1878" height="287" key="GridCell.Tab.0.left" timestamp="1603268798273">
+    <state width="1878" height="287" key="GridCell.Tab.0.center/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1603269976129" />
+    <state width="1878" height="287" key="GridCell.Tab.0.left" timestamp="1603269976129">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state width="1878" height="279" key="GridCell.Tab.0.left/0.23.1280.752/1280.23.1920.1032@1280.23.1920.1032" timestamp="1601636110091" />
-    <state width="1878" height="287" key="GridCell.Tab.0.left/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1603268798273" />
-    <state width="1878" height="287" key="GridCell.Tab.0.right" timestamp="1603268798276">
+    <state width="1878" height="287" key="GridCell.Tab.0.left/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1603269976129" />
+    <state width="1878" height="287" key="GridCell.Tab.0.right" timestamp="1603269976129">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state width="1878" height="279" key="GridCell.Tab.0.right/0.23.1280.752/1280.23.1920.1032@1280.23.1920.1032" timestamp="1601636110092" />
-    <state width="1878" height="287" key="GridCell.Tab.0.right/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1603268798276" />
+    <state width="1878" height="287" key="GridCell.Tab.0.right/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1603269976129" />
     <state x="1749" y="190" key="SettingsEditor" timestamp="1603263250060">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state x="1749" y="190" key="SettingsEditor/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1603263250060" />
-    <state x="1840" y="139" key="Vcs.Push.Dialog.v2" timestamp="1603179390304">
+    <state x="1840" y="139" key="Vcs.Push.Dialog.v2" timestamp="1603269815248">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state x="1840" y="136" key="Vcs.Push.Dialog.v2/0.23.1280.752/1280.23.1920.1032@1280.23.1920.1032" timestamp="1601636088262" />
-    <state x="1840" y="139" key="Vcs.Push.Dialog.v2/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1603179390304" />
+    <state x="1840" y="139" key="Vcs.Push.Dialog.v2/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1603269815248" />
     <state x="2014" y="272" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1603262653651">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
