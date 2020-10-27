@@ -146,7 +146,7 @@ public class Board {
         return Iterables.unmodifiableIterable(Iterables.concat(this.whitePlayer.getLegalMoves(), this.blackPlayer.getLegalMoves()));
     }
 
-    static class Builder {
+    public static class Builder {
 
         Map<Integer, Piece> boardConfig;
         Alliance nextMoveMaker;
