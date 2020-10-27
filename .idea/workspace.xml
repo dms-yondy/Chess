@@ -22,7 +22,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b47c26b-c6b7-4b43-81b6-8c5f2401f2b5" name="Default Changelist" comment="Added min and max methods in MinMax class">
+    <list default="true" id="4b47c26b-c6b7-4b43-81b6-8c5f2401f2b5" name="Default Changelist" comment="Added execute method to MinMax class">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chess/engine/player/ai/StandardBoardEvaluator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/chess/engine/player/ai/MinMax.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chess/engine/player/ai/MinMax.java" afterDir="false" />
     </list>
@@ -41,8 +42,8 @@
       <list>
         <option value="Enum" />
         <option value="JUnit4 Test Class" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -94,6 +95,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.chess.engine.player.ai" />
       <recent name="com.chess.engine.player" />
     </key>
   </component>
@@ -518,7 +520,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603694807419</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="Added execute method to MinMax class">
+      <created>1603696517879</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1603696517879</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -534,7 +543,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added equals method to pawnAttackMove class" />
     <MESSAGE value="Added toString method in pawnAttackMove class" />
     <MESSAGE value="Added equals method to PawnMove class" />
     <MESSAGE value="Added toString method in PawnMove class" />
@@ -559,17 +567,18 @@
     <MESSAGE value="added assets for gui" />
     <MESSAGE value="Added BoardEvaluator member, constructor and toString method to MinMax class" />
     <MESSAGE value="Added min and max methods in MinMax class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added min and max methods in MinMax class" />
+    <MESSAGE value="Added execute method to MinMax class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added execute method to MinMax class" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1728" y="133" key="#Project_Structure" timestamp="1603263127413">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state x="1728" y="133" key="#Project_Structure/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1603263127413" />
-    <state x="2053" y="112" key="#com.intellij.ide.util.MemberChooser" timestamp="1603268950816">
+    <state x="2053" y="112" key="#com.intellij.ide.util.MemberChooser" timestamp="1603696570992">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
-    <state x="2053" y="112" key="#com.intellij.ide.util.MemberChooser/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1603268950816" />
+    <state x="2053" y="112" key="#com.intellij.ide.util.MemberChooser/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1603696570992" />
     <state x="1957" y="419" key="#com.intellij.refactoring.memberPullUp.PullUpDialog" timestamp="1599462687498">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
