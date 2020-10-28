@@ -22,16 +22,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b47c26b-c6b7-4b43-81b6-8c5f2401f2b5" name="Default Changelist" comment="Refactored test cases package">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chess/gui/GameSetup.java" afterDir="false" />
+    <list default="true" id="4b47c26b-c6b7-4b43-81b6-8c5f2401f2b5" name="Default Changelist" comment="Added GameSetup panel as part of gui">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/chess/engine/board/Board$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/chess/engine/board/Board$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/chess/engine/board/Board.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/chess/engine/board/Board.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/chess/engine/board/Move$CastleMove.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/chess/engine/board/Move$CastleMove.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/chess/engine/board/Move$PawnEnPassantPawnAttackMove.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/chess/engine/board/Move$PawnEnPassantPawnAttackMove.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/chess/engine/board/Move$PawnJump.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/chess/engine/board/Move$PawnJump.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/chess/engine/board/Move$PawnPromotion.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/chess/engine/board/Move$PawnPromotion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/chess/engine/board/Move.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/chess/engine/board/Move.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chess/JChess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chess/JChess.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/chess/gui/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chess/gui/Table.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -208,13 +201,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1598620570910</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Finished Knight class implementation">
-      <created>1598855748733</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1598855748733</updated>
     </task>
     <task id="LOCAL-00005" summary="Added all the piece classes&#10;Board implemented">
       <created>1599029153681</created>
@@ -552,7 +538,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603783561678</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="Added GameSetup panel as part of gui">
+      <created>1603867792796</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1603867792797</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -568,7 +561,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Made parameter of equals method in PawnAttackMove class final" />
     <MESSAGE value="Created MajorAttackMove class" />
     <MESSAGE value="Added equals and execute method to en Passant class" />
     <MESSAGE value="Added equals and hashCode methods to CastleMove class" />
@@ -593,17 +585,18 @@
     <MESSAGE value="Added implemented StandardBoardEvaluator class" />
     <MESSAGE value="Remove depth from MoveStrategy interface and added into to MinMax class" />
     <MESSAGE value="Refactored test cases package" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactored test cases package" />
+    <MESSAGE value="Added GameSetup panel as part of gui" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added GameSetup panel as part of gui" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1728" y="133" key="#Project_Structure" timestamp="1603263127413">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state x="1728" y="133" key="#Project_Structure/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1603263127413" />
-    <state x="2053" y="112" key="#com.intellij.ide.util.MemberChooser" timestamp="1603696570992">
+    <state x="2053" y="112" key="#com.intellij.ide.util.MemberChooser" timestamp="1603876105752">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
-    <state x="2053" y="112" key="#com.intellij.ide.util.MemberChooser/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1603696570992" />
+    <state x="2053" y="112" key="#com.intellij.ide.util.MemberChooser/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1603876105752" />
     <state x="1978" y="309" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1603782278441">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
@@ -641,29 +634,29 @@
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state x="2047" y="104" key="Github.UntrackedFilesDialog/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1598620694454" />
-    <state width="1878" height="287" key="GridCell.Tab.0.bottom" timestamp="1603796352660">
-      <screen x="0" y="23" width="1920" height="1032" />
+    <state width="1878" height="287" key="GridCell.Tab.0.bottom" timestamp="1603879913445">
+      <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state width="1878" height="279" key="GridCell.Tab.0.bottom/0.23.1280.752/1280.23.1920.1032@1280.23.1920.1032" timestamp="1601636110093" />
-    <state width="1878" height="287" key="GridCell.Tab.0.bottom/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1603782641688" />
+    <state width="1878" height="287" key="GridCell.Tab.0.bottom/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1603879913445" />
     <state width="1878" height="287" key="GridCell.Tab.0.bottom/0.23.1920.1032@0.23.1920.1032" timestamp="1603796352660" />
-    <state width="1878" height="287" key="GridCell.Tab.0.center" timestamp="1603796352660">
-      <screen x="0" y="23" width="1920" height="1032" />
+    <state width="1878" height="287" key="GridCell.Tab.0.center" timestamp="1603879913444">
+      <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state width="1878" height="279" key="GridCell.Tab.0.center/0.23.1280.752/1280.23.1920.1032@1280.23.1920.1032" timestamp="1601636110092" />
-    <state width="1878" height="287" key="GridCell.Tab.0.center/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1603782641686" />
+    <state width="1878" height="287" key="GridCell.Tab.0.center/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1603879913444" />
     <state width="1878" height="287" key="GridCell.Tab.0.center/0.23.1920.1032@0.23.1920.1032" timestamp="1603796352660" />
-    <state width="1878" height="287" key="GridCell.Tab.0.left" timestamp="1603796352659">
-      <screen x="0" y="23" width="1920" height="1032" />
+    <state width="1878" height="287" key="GridCell.Tab.0.left" timestamp="1603879913443">
+      <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state width="1878" height="279" key="GridCell.Tab.0.left/0.23.1280.752/1280.23.1920.1032@1280.23.1920.1032" timestamp="1601636110091" />
-    <state width="1878" height="287" key="GridCell.Tab.0.left/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1603782641686" />
+    <state width="1878" height="287" key="GridCell.Tab.0.left/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1603879913443" />
     <state width="1878" height="287" key="GridCell.Tab.0.left/0.23.1920.1032@0.23.1920.1032" timestamp="1603796352659" />
-    <state width="1878" height="287" key="GridCell.Tab.0.right" timestamp="1603796352660">
-      <screen x="0" y="23" width="1920" height="1032" />
+    <state width="1878" height="287" key="GridCell.Tab.0.right" timestamp="1603879913444">
+      <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state width="1878" height="279" key="GridCell.Tab.0.right/0.23.1280.752/1280.23.1920.1032@1280.23.1920.1032" timestamp="1601636110092" />
-    <state width="1878" height="287" key="GridCell.Tab.0.right/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1603782641687" />
+    <state width="1878" height="287" key="GridCell.Tab.0.right/0.23.1280.752/1280.23.1920.1057@1280.23.1920.1057" timestamp="1603879913444" />
     <state width="1878" height="287" key="GridCell.Tab.0.right/0.23.1920.1032@0.23.1920.1032" timestamp="1603796352660" />
     <state x="1749" y="190" key="SettingsEditor" timestamp="1603782473923">
       <screen x="1280" y="23" width="1920" height="1057" />
