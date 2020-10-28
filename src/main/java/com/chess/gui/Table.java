@@ -340,4 +340,9 @@ public class Table {
             return this.moves.remove(move);
         }
     }
+
+    enum PlayerType {
+        HUMAN,
+        COMPUTER
+    }
 }
