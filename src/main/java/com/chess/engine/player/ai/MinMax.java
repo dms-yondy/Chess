@@ -33,10 +33,11 @@ public class MinMax implements MoveStrategy{
                         max(moveTransition.getTransitionBoard(), this.searchDepth - 1);
                 if(board.getCurrentPlayer().getAlliance().isWhite() && currentValue >= highestSeenValue) {
                     highestSeenValue = currentValue;
+                    bestMove = move;
                 } else if(board.getCurrentPlayer().getAlliance().isBlack() && currentValue <= lowestSeenValue){
                     lowestSeenValue = currentValue;
+                    bestMove = move;
                 }
-                bestMove = move;
             }
         }
 
